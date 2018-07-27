@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Array</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    div {padding: 2px; border: dotted red 0px;}
+    </style>
+     
+</head>
+<body>
+<div id="demo"></div>
+    
+  
+</body>
+</html>
+<script type="text/javascript">
+//array to store multiple values store in variable | array 3 properties constructor - length - prototype : 
+//contructor :- Return the fuction that create an array object; length :- return number of elements in the array
+
+// function cons(){
+//     const sitenames = ["Greenko","Mega","BSNL","BHEL"];
+//     const sitelocation = ["krunool","muchumarry","Palamakollu"];
+    
+
+//     const mixit = sitenames.concat(sitelocation);
+
+//     const lengval = sitelocation.length+sitenames.length;
+//     document.getElementById("demo").innerHTML = mixit + " | Length of Array:- " + lengval; 
+// }
+
+// //in js every method is use online give the boolean value 
+
+// let checktheval = [56,42,33,54,45,36,38,29];
+
+// function lessni(ls){
+//     return ls <= 29;
+// }
+// document.write(checktheval.every(lessni));
+   
+function stars(n){
+    var str = '';
+    for(var i=n; i>=1; i--){
+        for(var k=n; k>=i; k--){
+            str += "&nbsp";
+        }
+        for(var j=i; j>=1; j--){
+            str += j + "&nbsp";
+        }
+        document.write(str );
+        str = "<br />";
+    }
+}
+
+ stars(3);
+ document.write("<br />");
+
+function showstart (sho){
+    var empt = '';
+    for(var g = sho; g >= 1; g--){
+                document.write(g + ") ");
+            for(var h = sho; h>=1; h--){
+                document.write(h);
+            }
+            for(var u = h; u >= 1; u-- ){
+                
+            }
+        document.write("<br />");
+    }
+  
+}
+ showstart(8);
+
+</script>

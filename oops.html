@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .bg {background:yellow}
+  .inside {background:blue}
+   
+  </style>
+  
+</head>
+<body>
+    <svg id="mysvg" width="600" height="420" xmlns="http://www.w3.org/2000/svg" class="bg">
+    <rect id="myrect1" width="300" height="100" x="10" y="10" fill="blue"></rect>
+    <rect id="myrect2" width="100" height="100" x="320" y="10" 
+    style="stroke: red; stroke-width: 5px;"></rect>
+
+    <circle id="mycircle" cx="100" cy="150" r="60" fill="red"></circle>
+    <circle id="mycircle" cx="320" cy="250" r="70" fill="orange"
+     style="storke:blue; storke-width:pink"></circle>
+    </svg>
+</body>
+</html>
+<script type="text/javascript">
+ var globelvar = "to Access any where in project";
+ function accesss(){
+     var localvar = "to access with the function";
+
+ }
+ accesss();
+ console.log(globelvar);
+      console.log(localvar);
+ 
+</script>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
+    
+        <div id="demo"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+ 'use strict';
+    // var today = new Date();
+    // var cmas = new Date(today.getUTCFullYear(), 11, 25);
+    // var result = cmas - today;
+
+    // var oneday = 1000*60*60*24;
+    
+
+    // //var x =   d.getDate()+ " " + d.getMonth()+ " " +d.getUTCFullYear();   
+    // document.write(result)
+// let addstr = [1,2,3,4,5,6,7,8,9,10,11,12]
+// addstr.splice(11,0,"start","3000","94858","end") 
+
+// document.write(addstr);
+//slice also remove the array elements
+
+// let str = "test array for slice";
+// let sli = ["t","e","Z","X"];
+
+// document.write(str.includes("dfor"));
+
+let aryfil = [2,33,4,55,44,23,4,34,23,7,98,9,0,78,67,56,40,56,45];
+
+function equ(toequl){
+    return toequl > 7;
+}
+
+function lest(lesst){
+    return lesst < 8;
+}
+document.write(aryfil.sort() + "  Array Length :-" +aryfil.length + "<hr />");
+document.write("Above GraterThan no:-  "+aryfil.filter(equ).sort()  );
+
+document.write("<br/>");
+document.write("Below LessThan no:-  "+ aryfil.filter(lest).sort());
+document.write("<br/>");
+let b = aryfil.filter(equ).sort();
+let a =  aryfil.filter(lest).sort();
+document.write(b.length + " - "+ a.length);
+
+
+
+
+
+
+
+</script>
